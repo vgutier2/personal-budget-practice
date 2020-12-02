@@ -4,6 +4,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { LoginComponent } from './login/login.component';
 import { AccountComponent } from './account/account.component';
 import { P404Component } from './p404/p404.component';
+import { BudgetComponent } from './budget/budget.component';
 
 const routes: Routes =
 [
@@ -20,6 +21,11 @@ const routes: Routes =
   {
     path: 'account',
     component: AccountComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'budget',
+    component: BudgetComponent,
     pathMatch: 'full'
   },
   {
